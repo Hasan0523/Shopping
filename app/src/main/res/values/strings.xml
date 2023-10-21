@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Shopping</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="keta">Keta</string>
+    <string name="_35">35$</string>
+    <string name="adidas">Adidas</string>
+    <string name="_4_9">4.9</string>
+    <string name="search_product">Search product</string>
+    <string name="xdf_c_g_hv_j_bk_nlj_bhvgcxfcghvkjb_lknlmnjbhvg_fghvjbknljhg_fghk_ds_cdfzv_szvx_sdfv_sdfz_vsdf_sdfc_jk">xdf c g hv j bk nlj bhvgcxfcghvkjb lknlmnjbhvg fghvjbknljhg fghk ds cdfzv szvx sdfv sdfz vsdf sdfc jk</string>
+    <string name="title">Title</string>
+    <string name="log_out">Log out</string>
+</resources>
