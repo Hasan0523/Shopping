@@ -60,7 +60,7 @@ class LoginFragment : Fragment() {
                         val shared = SharedPrefHelper.getInstance(requireContext())
                         val user = response.body()!!
                         shared.setUser(user)
-                        requireActivity().onBackPressed()
+                        requireActivity().onBackPressedDispatcher.onBackPressed()
                     }else{
                         //TODO: Go to cart
                     }

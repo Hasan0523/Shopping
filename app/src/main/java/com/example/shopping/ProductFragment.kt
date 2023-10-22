@@ -46,7 +46,7 @@ class ProductFragment : Fragment() {
         binding.productIamgeVp.adapter =
             ImageAdapter(product.images, binding.productIamgeVp, binding.productParentConstraint)
         binding.productScreenBackFab.setOnClickListener {
-            requireActivity().onBackPressed()
+            requireActivity().onBackPressedDispatcher.onBackPressed()
         }
         binding.productScreenTitle.text = product.title
         binding.productScreenBrand.text = product.brand
@@ -65,7 +65,7 @@ class ProductFragment : Fragment() {
                     }
                     binding.productParentConstraint.setBackgroundColor(Color.WHITE)
                 } else {
-                    findNavController().popBackStack()
+                    requireActivity().onBackPressedDispatcher.onBackPressed()
                 }
             }
         })
