@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.shopping.databinding.FragmentCartBinding
 import com.example.shopping.model.Product
 
@@ -24,6 +25,10 @@ class CartFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding = FragmentCartBinding.inflate(inflater, container, false)
+
+        binding.cartBackFab.setOnClickListener {
+            findNavController().popBackStack()
+        }
 
 
 

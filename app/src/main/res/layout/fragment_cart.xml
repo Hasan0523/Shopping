@@ -3,22 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8AA6FA"
+    android:background="#A7BDFF"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".CartFragment">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cart_back_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:id="@+id/cart_back_fab"
         android:backgroundTint="#087CD8"
-        app:rippleColor="@color/gray_40"
         android:src="@drawable/back_icon"
         app:elevation="0dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@color/gray_40" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/cart_user_image"

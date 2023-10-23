@@ -100,6 +100,7 @@
             android:backgroundTint="@color/color_blue"
             android:src="@drawable/cart_icon"
             app:elevation="0dp"
+            android:id="@+id/shop_item_cart_fab"
             app:fabCustomSize="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

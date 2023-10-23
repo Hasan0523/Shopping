@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.example.shopping.R
 import com.example.shopping.model.Product
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlin.math.roundToInt
 
 class ProductsAdapter(var products:List<Product>, private val context: Context, private val productPressed: ProductPressed) : RecyclerView.Adapter<ProductsAdapter.MyHolder>() {
@@ -20,6 +21,7 @@ class ProductsAdapter(var products:List<Product>, private val context: Context, 
         val brand : TextView = itemView.findViewById(R.id.shop_item_brand)
         val price : TextView = itemView.findViewById(R.id.shop_item_price)
         val rating : TextView = itemView.findViewById(R.id.shop_item_reyting)
+        val cart : FloatingActionButton = itemView.findViewById(R.id.shop_item_cart_fab)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyHolder {
@@ -41,6 +43,11 @@ class ProductsAdapter(var products:List<Product>, private val context: Context, 
         holder.itemView.setOnClickListener {
             productPressed.onPressed(product)
         }
+
+        holder.cart.setOnClickListener {
+
+        }
+
     }
 
     interface ProductPressed{
